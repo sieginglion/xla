@@ -1078,4 +1078,5 @@ if __name__ == '__main__':
       metavar='FUNCTIONS_FILE',
       help='The path to the Functions.h file')
   args, files = arg_parser.parse_known_args()
+  print(args)
   generate(args)
