@@ -3,9 +3,7 @@
 CDIR="$(cd "$(dirname "$0")" ; pwd -P)"
 XDIR="$CDIR/.."
 PTDIR="/usr/local/lib/python3.6/dist-packages/torch/include"
-if [ -z "$PT_INC_DIR" ]; then
-  PT_INC_DIR="$PTDIR/build/aten/src/ATen"
-fi
+PT_INC_DIR="/usr/local/lib/python3.6/dist-packages/torch/include/ATen"
 
 python "$CDIR/gen.py" \
   --gen_class_mode \
